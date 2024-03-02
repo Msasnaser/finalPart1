@@ -1,6 +1,6 @@
 .section{
 height: 100vh;
-background: url(slider-16.jpg) center center / cover no-repeat;
+background: url(/public/slider-16.jpg) center center / cover no-repeat;
 display: flex; 
 justify-content: center; 
 }
