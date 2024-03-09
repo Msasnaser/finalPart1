@@ -1,0 +1,155 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: #081b29 !important;
+}
+.wrapper{
+    position: relative;
+    width: 760px;
+    height: 490px;
+    background: transparent;
+    border:2px solid #0ef;
+    overflow: hidden;
+    box-shadow: 0 0 25px #0ef;
+}
+.wrapper .formBox{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper .formBox.login{
+    left: 0;
+    padding: 0 40px;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.formBox h2{
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+.formBox .inputBox{
+position: relative;
+width: 100%;
+height: 50px;
+margin: 20px 0;
+}
+.inputBox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color:#fff;
+    font-weight: 600;
+    padding-right: 10px;
+    border-bottom: 2px solid #fff;
+}
+.inputBox input:focus,.inputBox input:valid{
+    border-bottom-color: #0ef;
+    transition: .5s;
+}
+.inputBox label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputBox input:focus~label,.inputBox input:valid~label{
+    top: -5px;
+    color:#0ef;
+}
+
+.formBox i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputBox input:focus~i,.inputBox input:valid~i{
+    color:#0ef;
+}
+.Btn{
+    width: 100%;
+   height: 45px;
+   background: transparent;
+   border:2px solid #0ef;
+   outline: none;
+   cursor: pointer;
+   font-size: 18px;
+   color: #fff;
+   font-weight: 600;
+   border-radius: 50px;
+}
+.formBox .logregLink{
+font-size: 15px !important;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.logregLink p a{
+color: #0ef;
+text-decoration: none;
+font-weight: 600;
+}
+.wrapper .infoText{
+    position: absolute;
+    top: -10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-top: 40px;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper .infoText.login1{
+        right: 0;
+    text-align: right;
+    padding: 0 20px 60px 120px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.wrapper .infoText h2{
+    font-size: 37px;
+    color: #fff;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+}
+.wrapper .infoText p{
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.3;
+    text-align: center;
+}
+.wrapper .bgAnimate{
+    position: absolute;
+    top: -4px;
+    right: 20px;
+    width: 850px;
+    height: 600px;
+    border-bottom: 3px solid #0ef;
+    background: linear-gradient(45deg,#081b29,#0ef);
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
+}

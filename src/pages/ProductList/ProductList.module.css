@@ -1,0 +1,110 @@
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 40px; 
+}
+.product{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 19px;
+    box-shadow: 1px 1px 10px rgba(26, 24, 24, 0.397); 
+}
+.product .productsImages{
+    width: 220px;
+    height: 130px;
+    border-radius: 15px; 
+}
+.aboutItem{
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 9;
+    /* opacity: 0;
+    visibility: hidden; */
+}
+.aboutItem div{
+    align-items: center;
+    background-color: #49474b;
+    display: flex;
+    height: 31px;
+    justify-content: center;
+    opacity: 0; 
+    flex-grow: 1;
+    /*  -webkit-transform: translateY(20px);
+     visibility: hidden; */
+    transform: translateY(20px);
+    transition: all .5s;
+    
+}
+.productInfo{
+    overflow: hidden;
+    position: relative;
+}
+
+.proWishlist{
+    border-right: 1px solid hsla(0, 0%, 100%, .2);
+    width: 48px;
+    /* opacity: 0; */
+}
+.addToWishlist{
+    background: none;
+    border: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    /* height: 34px; */
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+.addToWishlist:not(:disabled) {
+    cursor: pointer;
+}
+.productCart{
+    font-size: 14px;
+    transition-delay: .1s;
+    width:calc(100% - 96px);
+    /* opacity: 0; */
+}
+.productCart a{
+    background: none;
+    border: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.aboutItem:hover div{
+    opacity: 1;
+    transform: translateY(0);
+} 
+.productPrice{
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 9px;
+}
+i .yallow{
+color: yellow !important;
+}

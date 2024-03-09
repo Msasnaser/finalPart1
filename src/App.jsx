@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -7,10 +7,15 @@ import './App.css'
 import Root from './rout/Root';
 import Home from './pages/Home/Home';
 import Product from './pages/Products/Product';
-import SignIn from './pages/SignIn/SignIn';
-import SignUp from './pages/SignUp/SignUp';
 import Categories from './pages/Categories/Categories';
 import Cart from './pages/Cart/Cart';
+import Login from './pages/LogIn/Login';
+ import Register from './pages/Register/Register';
+ import { ToastContainer } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
+import ProductList from './pages/ProductList/ProductList';
+import NotFound from "./Components/notFound/NotFound";
+import ProductNotFound from "./pages/ProductList/ProductNotFound";
 
 function App() {
   
@@ -36,18 +41,34 @@ function App() {
         element: <Cart />,
       },
       {
-        path: "/signup",
-        element: <SignUp />,
+        path: "/ProductNotFound",
+        element: <ProductNotFound />,
       },
       {
-        path: "/signin",
-        element: <SignIn />,
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/productList/:id",
+        element: <ProductList />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ]
     },
   ]);
   return (
-   <RouterProvider router={router} />
+    <>
+    <RouterProvider router={router} />
+    <ToastContainer />
+    </>
+   
   )
 }
 
