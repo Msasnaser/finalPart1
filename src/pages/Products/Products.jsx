@@ -13,7 +13,7 @@ import { Navigation, A11y } from 'swiper/modules';
 import '../Products/Product.css'
 import { useContext } from 'react'
 import { UserInfo } from '../../Components/context/User'
-import { Zoom, toast,Bounce } from 'react-toastify';
+import { Zoom, toast} from 'react-toastify';
 import { useMyContext } from '../../Components/context/CartItem';
 export default function Product() {
   const { productId } = useParams();

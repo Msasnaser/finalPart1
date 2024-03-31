@@ -18,15 +18,11 @@ export default function Cart({ updateCartNumber }) {
             Authorization: `Tariq__${token}`
           }
         });
-        console.log(data);
         setCartItems(data.products);
         calculateTotalPrice(data.products);
       } catch (error) {
         console.log(error);
       }
-      // finally {
-      //   setLoader(false);
-      // }
     };
     useEffect(()=>{
       getCart();
@@ -78,7 +74,6 @@ const increaseQuantity = async(productId) =>{
   }
 }
 const decreaseQuantity=async (productId) =>{
- // const token = localStorage.getItem('userToken');
   try{
     const updatedCartItems = cartItems.map(item =>
       item.productId === productId? {...item, quantity: item.quantity - 1 } : item
@@ -95,7 +90,6 @@ const decreaseQuantity=async (productId) =>{
   }
 }
 const clearCart = async()=>{
-  //const token = localStorage.getItem('userToken');
   try{
      
   const{data}= await axios.patch(`${import.meta.env.VITE_API}/cart/clear`,{},{
@@ -135,9 +129,6 @@ catch(error){
     });
 }
 }
-  // if (loader) {
-  //   return <Loading />;
-  // }
   const calculateTotalPrice = (items) => {
     let total = 0;
     items.forEach(item => {
