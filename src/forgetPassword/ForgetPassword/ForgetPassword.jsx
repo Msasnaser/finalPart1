@@ -69,7 +69,7 @@ export default function ForgetPassword() {
   };
   return (
     <>
-        <section className={style.password}>
+        <section className="mt-5">
         <div className='container'>
           <form onSubmit={handleSubmit} className={style.box}>
             <h1>Forget Password</h1>
