@@ -60,6 +60,9 @@ export default function Register() {
       formData.append('password', user.password);
       formData.append('email', user.email);
       formData.append('image', user.image);
+      // for (const pair of formData.entries()) {
+      //   console.log(pair);
+      // }
       try{
       const { data } = await axios.post(`${import.meta.env.VITE_API}/auth/signup`, formData);
       setUser(
@@ -164,46 +167,6 @@ export default function Register() {
           <span className="bgAnimate"></span>
         </div>
         </section>  
-   
-           {/* {
-   userError.length>0? userError.map((error)=>{
-      toast({error}, {
-        position: "top-center",
-        autoClose: 1000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        transition: Bounce,
-        })
-}):''
-  }  */}
-      {/* <form onSubmit={handelSubmit}>
-      <div className="d-flex flex-column">
-      <label>user name</label>
-      <input type="text" value={user.userName} name="userName" onChange={handleChangeForm} required></input>
-      <label>email</label>
-      <input type="email" value={user.email} name="email" onChange={handleChangeForm} required></input>
-      <label>password</label>
-      <input type="password" value={user.password} name="password" onChange={handleChangeForm} required></input> 
-      <label>image</label>
-      <input type="file" name="image" onChange={handleChangeImage}></input>
-
-   <div className="login-toggle-btn"><input type="checkbox" />
-  <label className="ml-10">Remember me</label><a href="/">Forgot Password?</a></div>
-
-  <button type="submit"><span>login</span></button> */}
-
-      {/* {
-   userError.length>0? userError.map((error,index)=>{
-      return <p key={index}>{error}</p>
-    }):''
-  } */}
-      {/* </div>
-     </form>   */}
-
     </>
   )
 }

@@ -1,0 +1,5 @@
+@media screen and (max-width: 490px){
+    .swiper-slide {
+        margin-right: 90px !important; /* Adjust the margin value as needed */
+    }
+  }

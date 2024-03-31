@@ -11,4 +11,11 @@
     text-decoration: none;
     color:white;
   }
-  
+  @media (max-width: 425px){
+    .container{
+      width: calc(100% - 60px);
+    }
+    /* .swiper-wrapper .swiper-slide{
+      margin-right: 90px;
+    } */
+  }

@@ -1,0 +1,22 @@
+.div{
+    height:100vh;
+   border-radius: 18% ;
+   background-color: #eae2e2;
+
+}
+
+.orderInfo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-left: 15%;
+}
+.productImage{
+    width: 90%;
+    height: 100%;
+    max-height: 400px;
+}
+.card{
+gap:30px;
+box-shadow: 1px 1px 10px rgba(26, 24, 24, 0.397);
+}
