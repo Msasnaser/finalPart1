@@ -35,13 +35,14 @@ export default function About() {
     return (
         <>
        <div className="container">
-        <div className="d-flex flex-column gap-3 mt-5">
+        <div className="card mt-5">
+        <div className="d-flex flex-column gap-3">
             <span className="info"><strong className="text-danger">User Name : </strong>   {userInfo.userName}</span>
             <span className="info"><strong className="text-danger">Email : </strong>       {userInfo.email}</span>
             <div className="big-img">
                  <img className="mainImage"  src={userImg.secure_url}/> 
            </div> 
-        </div>
+        </div></div>
        </div>
         </>
     );

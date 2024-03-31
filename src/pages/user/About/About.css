@@ -7,3 +7,8 @@ img-thumbnail{
 strong{
     font-family: Cursive;
 }
+@media (max-width:490px) {
+    .card{
+        width: 100%;
+    }
+}

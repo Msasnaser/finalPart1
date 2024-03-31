@@ -8,7 +8,6 @@ import 'swiper/css/scrollbar';
 import '../Categories/Categoris.css'
 import { Navigation, A11y } from 'swiper/modules';
 import { Link} from 'react-router-dom';
-import { Zoom, toast } from 'react-toastify';
 import '../ProductList/ProductList';
 import Loading from '../../loading/Loading';
 export default function Categories() {
@@ -19,19 +18,6 @@ try{
    const { data } = await axios.get(`${import.meta.env.VITE_API}/categories/active?limit=10`);
     setCategory(data.categories);
 }
-  catch(err){
-    toast.error(err,{
-      position: "bottom-center",
-      autoClose: false,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: false,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-      transition: Zoom,
-      });
-    }
     finally{
       setLoader(false);
     }

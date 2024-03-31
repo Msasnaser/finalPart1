@@ -26,7 +26,7 @@ export default function() {
   </div>
   <div className="footer-right">
     <p className="footer-company-about">
-    <span>About the company</span>
+    <span>About the store</span>
       <strong>Molla</strong> The best website for shopping, containing all types of clothes for all ages.
     </p>
     <div class="footer-icons">

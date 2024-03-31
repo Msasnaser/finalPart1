@@ -47,11 +47,20 @@ export default function Review() {
       transition: Bounce,
       });
       }
-  
-  console.log(data);
 }
   catch(error){
     console.log(error);
+    toast.error(error.response.data.message, {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+      });
   }
   finally {
     setLoader(false);
